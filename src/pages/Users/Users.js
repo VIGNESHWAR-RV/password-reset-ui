@@ -59,10 +59,10 @@ const signOut = ()=>{
                 <h1 className="welcomeHeading"> {userData.firstName + " " + userData.lastName}</h1>
                 <b className="welcomeInfo">your account is secured </b>
                 <br/>
-                <p className="welcomeNote">
+                {/* <p className="welcomeNote">
                     <b className="welcomeBold">Note</b><br/>
                     We are still improving a lot to keep your privacy private
-                </p>
+                </p> */}
                 <br/>
                 <button className="welcomeAnchors" onClick={signOut}>👉Sign Out👈</button> 
            </div>
