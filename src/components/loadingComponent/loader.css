@@ -1,0 +1,52 @@
+.loadingDiv{
+   position: absolute;
+   width:34.4%;
+   height:95vh;
+   display:grid;
+   place-items: center;
+   background-color:#047bfb86;
+   border-bottom-right-radius: 5.8rem;
+   z-index: 2;
+}
+
+.loading{
+    object-fit:cover;
+    height:200px;
+    width:200px;
+    border-radius: 25px;
+    border:1px solid white;
+    border-radius: 25px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+@media only screen and (max-width: 1200px){
+   
+    .loadingDiv{
+        width:34%;
+    }
+
+}
+@media only screen and (max-width: 800px){
+   
+    .loadingDiv{
+        width:calc(100vw - 5vh);
+        height:73vh;
+    }
+
+}
+/* @media only screen and (max-width: 650px){
+   
+    .loadingDiv{
+        width:90%;
+        height:73%
+    }
+
+}
+@media only screen and (max-width: 375px){
+   
+    .loadingDiv{
+        width:88%;
+        height:73%
+    }
+
+}  */

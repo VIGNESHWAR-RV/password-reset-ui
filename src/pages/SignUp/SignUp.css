@@ -1,0 +1,84 @@
+
+.signUpForm{
+    padding:5% 10%;
+    color:aqua;
+    font-family:'Courier New', Courier, monospace;
+    font-style: oblique;
+    animation: form-fade-in 1.5s ease-in-out; 
+}
+@keyframes form-fade-in {
+    from {
+      opacity:0;
+    }
+    to {
+     opacity:1;
+    }
+}
+
+.signUpHeading{
+   margin: 25px 0;
+   font-size:3vmax;
+   text-align: center;
+   text-transform:uppercase;
+}
+
+.signUpSubmit{
+    border:none;
+    width:100%;
+    margin:5% 0;
+    padding:2.5%;
+    border-radius: 10px;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 1.5vmax;
+    cursor: pointer;
+}
+.signUpSubmit:hover{
+     background: aqua;
+}
+
+.signUpAnchorsDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.signUpAnchors{
+    border:none;
+    padding:1%;
+    background: transparent;
+    border-radius: 10px;
+    color:gold;
+    font-size: 1.2vmax;
+    font-style: inherit;
+    font-family: inherit;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+.signUpAnchorText{
+    font-size: 1.2vmax;
+    transform: scale(1.2);
+}
+.signUpAnchors:hover{
+    background: gold;
+    color:black;
+}
+
+
+@media only screen and (max-width: 800px){
+   .signUpHeading{
+       font-size: 10vmin;
+   }
+   .signUpSubmit{
+       font-size: 4vmin;
+   }
+   .signUpAnchorsDiv{
+       flex-direction: column;
+   }
+   .signUpAnchors{
+       font-size: 3vmin;
+   }
+   .signUpAnchorText{
+       font-size: 4vmin;
+   }
+}

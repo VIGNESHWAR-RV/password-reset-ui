@@ -1,0 +1,66 @@
+.div404{
+    margin:auto;
+    display:grid;
+    place-items:center;
+    padding:2%;
+    animation: div-fade-in 1.5s ease-in-out; 
+}
+@keyframes div-fade-in {
+    from {
+      opacity:0;
+    }
+    to {
+     opacity:1;
+    }
+}
+
+.heading404{
+    margin: 25px 0;
+    font-size:5vmax;
+    text-align: center;
+    color:aqua;
+    text-transform:uppercase;
+    font-style: oblique;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+ }
+
+.img404{
+    width:90%;
+    border:2px solid white;
+    border-radius: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 0.6s ease-in-out;
+}
+
+.img404:hover{
+    border-radius: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.goBackButton{
+    border:none;
+    background:transparent;
+    text-transform: capitalize;
+    color:gold;
+    border-radius: 10px;
+    font-size: 1.3vmax;
+    transform: scale(1.2);
+}
+.goBackButton:hover{
+    text-decoration: underline;
+    background: gold;
+    color:black;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .heading404{
+        font-size: 15vmin;
+    }
+   .goBackButton{
+       font-size: 3vmin;
+   }
+}

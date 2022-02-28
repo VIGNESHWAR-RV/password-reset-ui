@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.App{
+    margin:2.5vh;
+    height:95vh;
+    width:calc(100% - 5vh);
+    display:grid;
+    grid-template-columns: 1fr 0.55fr;
+    overflow: hidden;
+    border-radius: 5px;
+    border-top-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, 0.596);
+}
+.motto{
+    color:black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    letter-spacing: 2px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Image{
+    background: url("./components/background/Security.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-size: 2vmax;
+    text-shadow:6px 0px 5px #4383F3;
+    /* animation: App-logo-spin infinite 25s linear; */
+}
+/* @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+} */
+.page{
+    background: #4383F3;
+    display: grid;
+    align-items: center;
+    justify-items: stretch;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background: aqua;
+    border-radius: 25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (max-width: 800px){
+ .App{
+     grid-template-columns: 1fr;
+     grid-template-rows: 0.3fr 1fr;
+ }
+ .page{
+     align-items: flex-start;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
 }

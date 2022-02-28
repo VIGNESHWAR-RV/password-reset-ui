@@ -1,0 +1,77 @@
+.welcomeOuterDiv{
+    display:grid;
+    place-items: center;
+    padding:2%
+}
+.welcomeImg{
+    width:80%;
+    height:80%;
+    object-fit:contain;
+}
+.welcomeHeading{
+    color:aqua;
+    font-family:cursive ;
+    font-style: oblique;
+    letter-spacing: 2px;
+    font-size: 2.6vmax;
+}
+.welcomeInfo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.7vmax;
+    color:#00ff0d;
+    padding:1.5%;
+    background: black;
+    border: 0.15vw solid #00ff0d;;
+    border-radius: 20px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.welcomeAnchors{
+    border:none;
+    background: transparent;
+    border-radius: 10px;
+    color:gold;
+    font-size: 2vmax;
+}
+
+.welcomeAnchors:hover{
+    background: rgba(255, 217, 0, 0.486);
+    color:black;
+    text-decoration: underline;
+}
+
+.welcomeNote{
+    margin:2%;
+    border:0.3vw solid darkred;
+    border-radius: 20px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    padding:1%;
+    color:rgb(235, 185, 92);
+    font-size: 1.5vmax;
+    text-align: center;
+}
+.welcomeBold{
+    color:darkred;
+    text-decoration: underline;
+    font-size: 1.6vmax;
+}
+@media only screen and (max-width: 800px){
+    .welcomeImg{
+        width:100%;
+        height:25vh;
+    }
+    .welcomeHeading{
+        font-size: 8vmin;
+    }
+    .welcomeInfo{
+        font-size: 4vmin;
+    }
+    .welcomeNote{
+        font-size: large;
+    }
+    .welcomeAnchors{
+        font-size: 3.6vmin;
+    }
+    
+ }

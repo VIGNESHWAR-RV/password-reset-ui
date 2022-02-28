@@ -1,0 +1,48 @@
+
+.Input{
+    display: flex;
+    flex-direction: column;
+    margin:5% 0;
+}
+
+input{
+    padding:3%;
+    margin:10px;
+    border:none;
+    border-radius: 10px;
+    font-size: larger;
+    font-family: inherit;
+    font-style: inherit;
+}
+label{
+    font-weight: bold;
+    font-size: 1.6vmax;
+}
+span{
+    text-align: center;
+    background: red;
+    color:white;
+    padding:1.5%;
+    border-radius: 20px;
+    font-size: larger;
+    font-weight: bold;
+    display: none;
+}
+input:invalid[focused="true"]{
+    border:2px solid red;
+}
+input:invalid[focused="true"] ~ span{
+    display:block;
+}
+@media only screen and (max-width: 800px){
+     label{
+         font-size: 4.5vmin;
+     }
+     input{
+         font-size: medium;
+     }
+     span{
+         font-size: medium;
+     }
+
+ }

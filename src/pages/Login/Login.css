@@ -1,0 +1,87 @@
+
+.loginForm{
+    padding:0 10%;
+    color:aqua;
+    font-family:'Courier New', Courier, monospace;
+    font-style: oblique;
+    animation: form-fade-in 1.5s ease-in-out; 
+}
+@keyframes form-fade-in {
+    from {
+      opacity:0;
+    }
+    to {
+     opacity:1;
+    }
+}
+
+.loginHeading{
+    margin: 25px 0;
+   font-size:4vmax;
+   text-align: center;
+   text-transform:uppercase;
+}
+
+.loginSubmit{
+    border:none;
+    width:100%;
+    margin:5% 0;
+    padding:2.5%;
+    border-radius: 10px;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 1.8vmax;
+    cursor: pointer;
+}
+.loginSubmit:hover{
+     background: aqua;
+}
+
+.loginError{
+    background: rgb(255, 0, 0);
+    color:white;
+    padding:2%;
+    border-radius: 20px;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+}
+.loginAnchorsDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:1rem;
+}
+.loginAnchors{
+    border:none;
+    padding:1%;
+    background: transparent;
+    border-radius: 10px;
+    color:gold;
+    font-size: 1.2vmax;
+    text-decoration: underline;
+    transform: scale(1.2);
+    font-style: inherit;
+    font-family: inherit;
+}
+.loginAnchors:hover{
+    background: gold;
+    color:black;
+}
+
+
+@media only screen and (max-width: 800px){
+   .loginHeading{
+       font-size: 10vmin;
+   }
+   .loginSubmit{
+       font-size: 4vmin;
+   }
+   .loginAnchorsDiv{
+       flex-direction: column;
+   }
+   .loginAnchors{
+       font-size: 3vmin;
+   }
+}
