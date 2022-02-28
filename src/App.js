@@ -1,7 +1,7 @@
 
 import './App.css';
 import {Redirect, Route, Switch} from "react-router-dom";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Login } from "./pages/Login/Login";
 import { SignUp } from './pages/SignUp/SignUp';
 import { ForgotPassword } from './pages/ForgotPassword/ForgotPassword';
@@ -13,6 +13,13 @@ import { Verified } from "./components/loadingComponent/verified"
 
 
 function App() {
+
+  useEffect(()=>{
+    if(window.location.href === "https://authentication-work-by-rv.netlify.app/login"){
+      window.location.href = "https://authentication-by-rv.herokuapp.com"
+    }
+  },[])
+  console.log(window.location.href);
 
 const [loading,setLoading] = useState(false);
 const [verified,setVerified] = useState(false);
